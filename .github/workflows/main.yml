@@ -12,8 +12,13 @@ jobs:
 
 
     steps:
-      - name: 'Testing Gothub action'
-        run: pwd
+      - name: 'Printing folder contents'
+        run: ls
+
+      - uses: actions/checkout@v3 
+
+       - name: 'Printing folder contents'
+        run: ls 
     
       - name: 'Testing Printing'
         run: echo "Zead Shalaby"
